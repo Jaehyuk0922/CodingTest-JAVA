@@ -1,1 +1,4 @@
-
+public static int gcd(int p, int q) {
+    if (q == 0) return p; // 종료 조건: q가 0이면 p를 반환
+    return gcd(q, p % q); // 재귀 호출: q와 p를 q로 나눈 나머지를 인자로 호출
+}
